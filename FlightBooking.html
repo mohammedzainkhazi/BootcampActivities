@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BootCamp</title>
+    <style>
+		table {
+			border:2px solid ;
+			border-collapse:collapse;
+			padding:5px;
+		}
+		table th {
+			border:2px solid ;
+			padding:5px;
+			background: #ffe6e6;
+			color: #313030;
+		}
+		table td {
+			border:1px solid ;
+			text-align:center;
+			padding:5px;
+			background: #ffe6e6;
+			color: #313030;
+		}
+	</style>
+</head>
+<body>
+    <div class="flex flex-col w-full px-2">
+        <div class="headline flex flex-row w-full justify-center">
+            <div class="redbox text-yellow-200 py-4 text-center font-bold bg-red-500 w-[80%]">
+                BOOKING FORM
+            </div>
+            <div class="redbox text-red-500  py-4 text-left font-bold w-[20%] italic pl-2">
+                AIR ALGERIE
+            </div>
+        </div>
+        <div class="form w-full bg-gray-200">
+            <!-- FORM -->
+            <form class="flex flex-col w-full">
+                <fieldset class="border-2 border-black w-full justify-around  flex flex-row py-5">
+                  <legend class="font-bold text-red-500">Passenger :</legend>
+                  <div class="flex flex-col justify-center items-center">
+                    <label for="fname" class="text-red-600 font-bold">First Name:</label>
+                  <input  class="border outline-none" type="text" id="fname" name="fname">
+                  </div>
+                  <div class="flex flex-col justify-center items-center">
+                    <label for="fname" class="text-red-600 font-bold">Last Name</label>
+                  <input  class="border outline-none" type="text" id="lname" name="lname">
+                  </div>
+                 <div class="flex flex-col justify-center items-center">
+                    <label for="age" class="text-red-600 font-bold">Age</label>
+                    <select class="border outline-none">
+                      <option>Select</option>
+                      <option>10</option>
+                      <option>20</option>
+                      <option>30</option>
+                      <option>40</option>
+                      <option>50</option>
+                    </select>
+                 </div>
+                  </fieldset>
+                <!-- FLIGHT FROM TO  -->
+                  <div class="w-full justify-around  flex flex-row py-5">
+                    <div class="flex flex-col justify-center items-center">
+                        <label for="age" class="text-red-600 font-bold">Leaving from (city or airport)</label>
+                        <select class="border outline-none">
+                          <option>Bangalore</option>
+                          <option>20</option>
+                          <option>30</option>
+                          <option>40</option>
+                          <option>50</option>
+                        </select>
+                     </div>
+                     <div class="flex flex-col justify-center items-center">
+                        <label for="age" class="text-red-600 font-bold">Going to (city or airport)</label>
+                        <select class="border outline-none">
+                          <option>Bangalore</option>
+                          <option>20</option>
+                          <option>30</option>
+                          <option>40</option>
+                          <option>50</option>
+                        </select>
+                     </div>
+                     <div class="flex flex-col justify-center items-center">
+                        <label for="age" class="text-red-600 font-bold">Class</label>
+                        <select class="border outline-none">
+                          <option>Premium</option>
+                          <option>Basic</option>
+                          <option>30</option>
+                          <option>40</option>
+                          <option>50</option>
+                        </select>
+                     </div>
+                 </div>
+
+                 <div class="w-full flex flex-row justify-center gap-20 items-center py-5">
+                    <div class="flex flex-col">
+                        <div class="font-bold text-red-500 text-center">Date</div>
+                        <div class="flex flex-row justify-center items-center">
+                            <label for="age" class="text-red-600 font-bold pr-1">Period from</label>
+                            <select class="border outline-none">
+                              <option>20</option>
+                              <option>30</option>
+                              <option>40</option>
+                              <option>50</option>
+                            </select>
+                            <select class="border outline-none">
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <option>Apr</option>
+                              </select>
+                              <select class="border outline-none">
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                              </select>
+                         </div>
+                         <div class="flex flex-row justify-center items-center">
+                            <label for="age" class="text-red-600 font-bold pr-1 pl-4 pt-2">Period To</label>
+                            <select class="border outline-none">
+                              <option>20</option>
+                              <option>30</option>
+                              <option>40</option>
+                              <option>50</option>
+                            </select>
+                            <select class="border outline-none">
+                                <option>Jan</option>
+                                <option>Feb</option>
+                                <option>Mar</option>
+                                <option>Apr</option>
+                              </select>
+                              <select class="border outline-none">
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option>2024</option>
+                              </select>
+                         </div>
+                    </div>
+                    <div class="text-red-500 font-bold">GO! ✈️</div>
+                 </div>
+
+              </form>
+        </div>
+        <div class="headline flex flex-col w-full justify-center">
+            <div class="redbox text-yellow-300 py-3 text-left font-bold bg-red-500 w-full pl-4 mt-4 ">
+                PROGRAM OF FLIGHTS
+            </div>
+            <div class="flex flex-col items-center bg-[#ffe6e6] py-3">
+                <p class="text-center text-sm font-bold">List of the ALGIERES_PARIS-ROISSY flights Operating Between the 01-03-2005 and the 30-08-2005</p>
+            </div>
+            <table class="bg-[#ffe6e6]">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Flight Number</th>
+                        <th>Hour of Departure</th>
+                        <th>Hour of Arrival</th>
+                        <th>Plane Id</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><b>Tuesday 01/08/2005</b></td>
+                        <td><b>1002</b></td>
+                        <td><b>07H50&nbsp;</b></td>
+                        <td><b>&nbsp;10H05</b></td>
+                        <td><b>&nbsp;A330</b></td>
+                    </tr>
+                    <tr>
+                        <td><b><span style="font-style: normal;">Tuesday 01/08/2005</span>&nbsp;</b></td>
+                        <td><b>&nbsp;1002</b></td>
+                        <td><b><span style="font-style: normal;">07H50&nbsp;</span>&nbsp;</b></td>
+                        <td><b>&nbsp;10H05</b></td>
+                        <td><b>&nbsp;B2283</b></td>
+                    </tr>
+                    <tr>
+                        <td><b><span style="font-style: normal;">Tuesday 01/08/2005</span>&nbsp;</b></td>
+                        <td><b>&nbsp;1002</b></td>
+                        <td><b><span style="font-style: normal;">07H50&nbsp;</span>&nbsp;</b></td>
+                        <td><span style="font-style: normal;"><b>10H05</b></span></td>
+                        <td><b>&nbsp;C3E25</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>&nbsp;Tuesday 01/08/2005</b></td>
+                        <td><b>&nbsp;1002</b></td>
+                        <td><b><span style="font-style: normal;">07H50&nbsp;</span>&nbsp;</b></td>
+                        <td><b>&nbsp;10H05</b></td>
+                        <td><b>&nbsp;D3235</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>&nbsp;Tuesday 01/08/2005</b></td>
+                        <td><b>&nbsp;1002</b></td>
+                        <td><b>07H50&nbsp;</b></td>
+                        <td><b>&nbsp;10H05</b></td>
+                        <td><b>E3252&nbsp;</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>&nbsp;Tuesday 01/08/2005</b></td>
+                        <td><b>&nbsp;1002</b></td>
+                        <td><b>07H50&nbsp;</b></td>
+                        <td><b>&nbsp;10H05</b></td>
+                        <td><b>B2354&nbsp;</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>&nbsp;Tuesday 01/08/2005</b></td>
+                        <td><b>&nbsp;1002</b></td>
+                        <td><b>07H50&nbsp;</b></td>
+                        <td><b>&nbsp;10H05</b></td>
+                        <td><b>A3253</b>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
